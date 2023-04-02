@@ -1,0 +1,582 @@
+/* Start Of Global Area */
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Start Of Body Text Area */
+body {
+    font-size: 1rem;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* End Of Body Text Area */
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Start Of Root Colors Area */
+:root {
+    --cj-brown: #92542A;
+    --cj2-brown: #5B321C;
+    --dark-brown: #2A2123;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --transition: all 0.3s linear;
+}
+
+/* End Of Root Colors Area */
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Start Of Anchor Tags Area */
+a {
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* End Of Anchor Tags Area */
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Start Of Underline Area */
+.global-underline, .global-underline2, .global-underline3{
+    max-width: 580px;
+    border-bottom: solid var(--cj-brown) 3px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.global-underline2 {
+    max-width: 300px;
+    border-bottom: solid var(--cj2-brown) 3px;
+}
+
+.global-underline3 {
+    max-width: 400px;
+}
+
+.global-underline4{
+    width: 300px;
+    border-bottom: solid var(--cj2-brown) 3px;
+    border-radius: 20px;
+    z-index: 1;
+}
+/* End Of Underline Area */
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Start Of Keyframes Area */
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Css Animations */
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+/* --------------------------------------------------------------------------------------------------------------- */
+/* End Of Keyframes Area */
+/* --------------------------------------------------------------------------------------------------------------- */
+/* End Of Global Area */
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Start Of Header Area */
+#header {
+    
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+.header-container {
+
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+.header__navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 350px;
+    background: var(--cj-brown);
+    box-shadow: var(--light-shadow);
+    padding: 16px 16.5px;
+    transition: var(--transition);
+    z-index: 2;
+}
+
+.fixed-nav .header-title{
+    margin: 30px 0 50px 20px;
+}
+
+.fixed-nav .header-title2 {
+    margin: 30px 0 50px 70px;
+}
+
+.fixed-nav .header-title3 {
+    margin: 30px 0 50px 45px;
+}
+
+.fixed-nav .header-title4 {
+    margin: 30px 0 50px 80px;
+}
+
+.fixed-nav .header-links li a:hover {
+    color: white;
+}
+
+.fixed-nav .header-logo {
+    margin-top: 60px;
+}
+/* --------------------------------------------------------------------------------------------------------------- */
+.header__logo-wrapper {
+    margin-top: 20px;
+}
+
+.header-logo {
+    border-radius: 20%;
+    margin-left: 20px;
+}
+
+.header-title {
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 10px 0 50px 20px;
+}
+
+.header-title2{
+    margin: 10px 0 50px 60px;
+}
+
+.header-title3 {
+    margin: 10px 0 50px 30px;
+}
+
+.header-title4{
+    margin: 10px 0 50px 70px;
+}
+
+.header-btn{
+    visibility: hidden;
+}
+/* --------------------------------------------------------------------------------------------------------------- */
+.header__links-wrapper {
+    max-height: 0;
+    margin: 0 auto;
+}
+
+.header-links {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header-links li {
+    padding-left: 50px;
+}
+/* --------------------------------------------------------------------------------------------------------------- */
+.header__coffee-beans-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 0 0 0;
+}
+
+.header__coffee-beans-img {
+    width: 90%;
+    border-radius: 50px;
+}
+
+/* End Of Header Area */
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Start Of Coffee Products Area */
+#coffee-products, #coffee-stores {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#coffee-contact, #coffee-about{
+    background: url(https://cablevey.com/wp-content/uploads/2020/10/How-Do-You-Process-Coffee-Beans-for-Distribution-1080x675.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    /* width: 70vw; */
+    width: 1300px;
+    /* margin-top: 100px; */
+    border-radius: 8px;
+    padding: 50px;
+    margin: 100px auto 0 auto;
+    box-shadow: var(--dark-shadow);
+}
+
+#coffee-about{
+    position: relative;
+}
+
+#coffee-about::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+/* --------------------------------------------------------------------------------------------------------------- */
+.coffee__about-title-wrap{
+   display: grid;
+   justify-content: center;
+}
+.coffee__products-title, .coffee__contact-title, .coffee__stores-title, .coffee__about-title {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.coffee__contact-title, .coffee__about-title{
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+.coffee__products-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px 50px;
+}
+
+.coffee__contact-container, .coffee__stores-container, .coffee__about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 0 0 0;
+}
+
+.coffee__contact-form {
+    background: var(--cj2-brown);
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 20px;
+    padding: 40px 50px 40px 50px;
+    box-shadow: var(--dark-shadow);
+}
+
+.coffee__contact-name,
+.coffee__contact-email {
+    padding: 15px 0 0 0;
+}
+
+.coffee__contact-submit {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.coffee__contact-submit-btn {
+    background: var(--dark-brown);
+    color: white;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    letter-spacing: 1.7px;
+    border-radius: 8px;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.coffee__stores-table{
+    border-collapse: separate;
+    border-spacing: 2px;
+    border: 3px solid var(--cj-brown);
+    /* width: 70vw; */
+    /* height: 10vw; */
+    width: 1300px;
+    height: 100%;
+}
+
+
+.coffee__stores-table-head tr th{
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    border: 3px solid var(--cj-brown);
+    padding: 10px;
+}
+
+.coffee__stores-table-body tr td{
+    font-size: 1.1rem;
+    font-style: italic;
+    letter-spacing: 1.2px;
+    border: 3px solid var(--cj-brown);
+    padding: 10px;
+    vertical-align: middle;
+    
+}
+
+.coffee__stores-table-body .coffee__store-img-wrap{
+    padding: 0;
+}
+
+.coffee__stores-img{
+    width: 100%;
+    height: 400px;
+    /* width: 545px;
+    height: 500px; */
+}
+
+.coffee__about-info{
+    color: white;
+    max-width: 845px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+    border-radius: 8px;
+    padding: 20px;
+    z-index: 1;
+}
+/* --------------------------------------------------------------------------------------------------------------- */
+.coffee__products-info {
+   
+}
+
+.coffee__products-subtitle, .coffee__contact-subtitle{
+    font-size: 1.8rem;
+    margin: 70px 0 15px 0;
+}
+
+.coffee__contact-subtitle{
+    margin: 50px 0 15px 0;
+}
+
+.coffee__products-img {
+    width: 650px;
+    height: 375px;
+    border-radius: 20px;
+    margin: 10px 0 20px 0;
+}
+
+.coffee__products-description {
+    font-size: 1.2rem;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+    width: 570px;
+    margin: 0 auto;
+}
+
+.coffee__products-detail {
+    text-decoration: underline;
+    display: block;
+    margin: 20px 0 20px 0;
+}
+/* End Of Coffee Products Area */
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Start Of Footer Area */
+#coffee-footer {
+    background: var(--cj-brown);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 170px;
+    margin-top: 100px;
+}
+
+.coffee__footer-copyrights--logo {
+    color: black;
+    font-size: 1.1rem;
+    /* font-weight: 600; */
+    letter-spacing: 2.8px;
+    margin: 0 auto;
+}
+
+.coffee__footer-scroll-up--link {
+    color: white;
+    position: fixed;
+    width: 2rem;
+    height: 2rem;
+    bottom: 4rem;
+    right: 3rem;
+    visibility: hidden;
+    z-index: -100;
+    animation: bounce 2s ease-in-out infinite;
+}
+.coffee__footer-scroll-up--link .fa-arrow-up{
+    background: var(--dark-brown);
+    font-size: 1.3rem;
+    border-radius: 8px;
+    padding: 7px;
+    margin-right: 50px;
+}
+.show__scroll-link {
+    visibility: visible;
+    z-index: 100;
+}
+/* End Of Footer Area */
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Start Of  Area */
+
+/* End Of  Area */
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Start Of Media Queries Area */
+@media screen and (max-width: 1370px) {
+    .header__navbar-wrapper{
+        background: var(--cj-brown);
+        display: block;
+        padding: 16px 16.5px;
+    }
+
+    .fixed-nav{
+        height: auto;
+    }
+
+    .fixed-nav .header-logo {
+        margin-top: 0;
+    }
+
+    .header__sidebar-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-title{
+        color: white;
+    }
+
+    .header-title3{
+        margin: 30px 0 50px 45px;
+    }
+
+    .header-title4 {
+        margin: 10px 0 50px 80px;
+    }
+
+    .header__btn-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    .header-btn {
+        background: transparent;
+        color: white;
+        font-size: 2.5rem;
+        border: none;
+        visibility: visible;
+        transition: var(--transition);
+        animation: bounce 2s ease-in-out infinite;
+        cursor: pointer;
+    }
+
+    .header-btn:hover{
+        color: var(--dark-brown);
+    }
+/* --------------------------------------------------------------------------------------------------------------- */
+    .header__links-wrapper{
+        /* max-height: 0; */
+        /* height: 0; */
+        overflow: hidden;
+        transition: var(--transition);
+    }
+
+    .header-links {
+        font-size: 1.8rem;
+        display: block;
+        text-align: end;
+        /* margin-left: 20px; */
+        margin-right: 20px;
+    }
+
+    .header-links li{
+        padding: 10px 0;
+    }
+
+    .header-links li a{
+        color: white;
+        transition: var(--transition);
+    }
+
+    .header-links li a:hover{
+        color: var(--dark-brown);
+    }
+
+    .header__coffee-beans-img{
+        width: 100%;
+    }
+/* --------------------------------------------------------------------------------------------------------------- */
+    .coffee__products-container {
+        grid-template-columns: 1fr;
+    }
+
+    .coffee__products-subtitle{
+
+    }
+
+    .coffee__products-img{
+        height: 550px;
+        width: 80%;
+    }
+
+    .coffee__products-description{
+        width: 70%;
+    }
+
+    .coffee__products-detail{
+
+    }
+/* --------------------------------------------------------------------------------------------------------------- */
+    #coffee-contact,
+    #coffee-about{
+        max-width: 100%;
+    }
+/* --------------------------------------------------------------------------------------------------------------- */
+    .coffee__about-info{
+        max-width: 100%;
+    }
+}
+/* --------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 1200px) {
+    .header-logo {
+        display: none;
+    }
+}
+/* --------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 800px){
+    .remove-content{
+        display: none;
+    }
+/* --------------------------------------------------------------------------------------------------------------- */
+    .global-underline {
+        max-width: 410px;
+    }
+
+    .global-underline4{
+        width: 230px;
+    }
+/* --------------------------------------------------------------------------------------------------------------- */
+    .coffee__products-title {
+        font-size: 3rem;
+    }
+
+    .coffee__products-img {
+        height: 240px;
+    }
+    input{
+        display: block;
+    }
+    .coffee__contact-submit-btn{
+        display: inline;
+    }
+/* --------------------------------------------------------------------------------------------------------------- */
+    .coffee__stores-table {
+        /* min-width: 100%; */
+        min-height: 500px;
+    }
+}
+/* --------------------------------------------------------------------------------------------------------------- */
+/* End Of Media Queries Area */
+/* --------------------------------------------------------------------------------------------------------------- */
